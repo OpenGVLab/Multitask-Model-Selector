@@ -1,6 +1,6 @@
 # Foundation Model is Efficient Multimodal Multitask Model Selector
 
-This is the PyTorch implementation of the paper **Foundation Model is Efficient Multimodal Multitask Model Selector**
+This is the PyTorch implementation of the paper **Foundation Model is Efficient Multimodal Multitask Model Selector**, the paper is available at http://arxiv.org/abs/2308.06262
 
 
 
