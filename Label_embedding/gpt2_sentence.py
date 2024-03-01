@@ -2,10 +2,10 @@ from transformers import GPT2Tokenizer, GPT2Model
 import torch
 import numpy as np
 device = "cuda" if torch.cuda.is_available() else "cpu"
-tokenizer = GPT2Tokenizer.from_pretrained('gpt2-large')
+tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium')
 # tokenizer.add_special_tokens({'pad_token': '[PAD]'})
 tokenizer.pad_token = tokenizer.eos_token
-model = GPT2Model.from_pretrained('gpt2-large')
+model = GPT2Model.from_pretrained('gpt2-medium')
 model.to(device)
 
 
