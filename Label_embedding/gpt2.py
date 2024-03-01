@@ -2,10 +2,10 @@ from transformers import GPT2Tokenizer, GPT2Model
 import torch
 import numpy as np
 # device = "cuda" if torch.cuda.is_available() else "cpu"
-tokenizer = GPT2Tokenizer.from_pretrained('gpt2-large')
+tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium')
 # tokenizer.add_special_tokens({'pad_token': '[PAD]'})
 tokenizer.pad_token = tokenizer.eos_token
-model = GPT2Model.from_pretrained('gpt2-large')
+model = GPT2Model.from_pretrained('gpt2-medium')
 # text = "Replace me by any text you'd like."
 datasets_hub = ['dtd','aircraft','caltech101','cars','cifar10','cifar100','flowers','food','pets','sun397','voc2007']
 
@@ -50,4 +50,4 @@ for dataset in datasets_hub:
     # 输出编码结果
     # print(feature[0])
     # print(feature.shape)
-    np.save(dataset + '_nonorm_gpt2L.npy',feature.cpu())
+    np.save(dataset + '_nonorm_gpt2.npy',feature.cpu())
