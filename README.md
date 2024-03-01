@@ -78,3 +78,5 @@ The VQA task has the same pipeline as the categorization task, and the TQA and R
 
   If you need to use other baselines such as LogME, you can use the **metric parameter** to replace, here we provide LogME, TransRate, LEEP, NLEEP and other common baseline
 
+# Contact
+It you have any questions, you can email Fanqing Meng with mengfanqing33@gmail.com
